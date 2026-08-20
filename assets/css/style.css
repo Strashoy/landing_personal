@@ -87,7 +87,7 @@ h3 { font-size: var(--fs-h3); }
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: var(--dark-blue);
+  background-color: var(--dark-orchid);
   z-index: 1000;
 }
 
@@ -154,7 +154,7 @@ h3 { font-size: var(--fs-h3); }
 .about.me {
   padding-top: 8rem;
   text-align: center;
-  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--dark-orchid) 100%);
+  background-color: var(--dark-blue);
   color: var(--white);
   min-height: 60vh;
   display: flex;
@@ -172,14 +172,14 @@ h3 { font-size: var(--fs-h3); }
 }
 
 .about.me .highlight {
-  color: var(--orange-blood);
+  color: var(--white);
 }
 
 .about.me .about-subtitle {
   font-size: var(--fs-h3);
   font-weight: 400;
   margin-bottom: 1rem;
-  color: var(--deep-sky-blue);
+  color: var(--white);
 }
 
 .about.me .about-text {
@@ -614,7 +614,7 @@ h3 { font-size: var(--fs-h3); }
    Footer
    ======================================== */
 .footer {
-  background-color: var(--dark-blue);
+  background-color: var(--dark-orchid);
   color: var(--white);
   text-align: center;
   padding: 2rem;
@@ -679,7 +679,7 @@ h3 { font-size: var(--fs-h3); }
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: var(--dark-blue);
+    background-color: var(--dark-orchid);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
