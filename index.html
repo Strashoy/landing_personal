@@ -8,7 +8,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
   <!-- Hojas de Estilo -->
   <link rel="stylesheet" href="assets/css/reset.css">
@@ -20,10 +20,10 @@
   <header class="header">
     <div class="logo">
       <a href="#hero">
-        <img src="assets/img/logo.png" alt="Logo de Lucas" class="logo-img">
+        <img src="images/logo-rolesencia.png" alt="Logo de Rolesencia" class="logo-img">
       </a>
     </div>
-    <nav class="nav">
+    <nav class="nav" aria-label="Navegación principal">
       <ul class="nav-list">
         <li><a href="#hero" class="nav-link">Inicio</a></li>
         <li><a href="#about" class="nav-link">Sobre mí</a></li>
@@ -36,14 +36,14 @@
 
   <!-- Contenido Principal -->
   <main>
-    
+
     <!-- Presentación -->
-    <section id="about" class="section about me">
+    <section id="hero" class="section about me">
       <div class="about-content">
         <h1 class="about-title">Hola, soy <span class="highlight">Lucas Eliel Sosa</span></h1>
         <h2 class="about-subtitle">Desarrollador Mobile & Diseñador de Juegos de Rol</h2>
         <p class="about-text">Apasionado por la experiencia de usuario y solucionar problemas de forma sencilla para el usuario.</p>
-        
+
         <div class="about-actions">
           <a href="https://github.com/Strashoy" target="_blank" rel="noopener noreferrer">Mi Perfil de GitHub</a>
           <a href="https://porfolio-rho-olive.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-vercel">Ver en Vercel</a>
@@ -68,50 +68,46 @@
     <section id="network" class="section network">
       <h2 class="section-title">Mis Redes</h2>
       <div class="network-container">
-        
-        <!-- Agregamos un poco de estilo en línea solo para que el texto quede centrado sobre la imagen -->
-        <table style="text-align: center;">
-          
-          <!-- Fila 1: Nombres de las redes (Encabezados) -->
-          <tr>
-            <th>Instagram</th>
-            <th>YouTube</th>
-            <th>GitHub</th>
-            <th>Itch.io</th>
-            <th>LinkedIn</th>
-          </tr>
-          
-          <!-- Fila 2: Logos clickeables (Celdas) -->
-          <tr>
-            <td>
-              <a href="https://www.instagram.com/rolesencia/" target="_blank" rel="noopener noreferrer">
-                <img src="images/icon-instagram.svg" alt="Instagram" style="width: 100px; height:auto;" class="icono">
-              </a>
-            </td>
-            <td>
-              <a href="https://www.youtube.com/@rolesencia" target="_blank" rel="noopener noreferrer">
-                <img src="images/icon-youtube.svg" alt="YouTube" style="width: 100px; height:auto;" class="icono">
-              </a>
-            </td>
-            <td>
-              <a href="https://github.com/Strashoy" target="_blank" rel="noopener noreferrer">
-                <img src="images/icon-github.svg" alt="GitHub" style="width: 100px; height:auto;" class="icono">
-              </a>
-            </td>
-            <td>
-              <a href="https://rolesencia.itch.io/" target="_blank" rel="noopener noreferrer">
-                <img src="images/icon-itch-io.svg" alt="Itch.io" style="width: 100px; height:auto;" class="icono">
-              </a>
-            </td>
-            <td>
-              <a href="https://www.linkedin.com/in/strashoy/" target="_blank" rel="noopener noreferrer">
-                <img src="images/icon-linkedin.svg" alt="LinkedIn" style="width: 100px; height:auto;" class="icono">
-              </a>
-            </td>
-          </tr>
-
+        <table>
+          <thead>
+            <tr>
+              <th>Instagram</th>
+              <th>YouTube</th>
+              <th>GitHub</th>
+              <th>Itch.io</th>
+              <th>LinkedIn</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://www.instagram.com/rolesencia/" target="_blank" rel="noopener noreferrer">
+                  <img src="images/icon-instagram.svg" alt="Instagram - Rolesencia" class="icono">
+                </a>
+              </td>
+              <td>
+                <a href="https://www.youtube.com/@rolesencia" target="_blank" rel="noopener noreferrer">
+                  <img src="images/icon-youtube.svg" alt="YouTube - Rolesencia" class="icono">
+                </a>
+              </td>
+              <td>
+                <a href="https://github.com/Strashoy" target="_blank" rel="noopener noreferrer">
+                  <img src="images/icon-github.svg" alt="GitHub - Strashoy" class="icono">
+                </a>
+              </td>
+              <td>
+                <a href="https://rolesencia.itch.io/" target="_blank" rel="noopener noreferrer">
+                  <img src="images/icon-itch-io.svg" alt="Itch.io - Rolesencia" class="icono">
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/in/strashoy/" target="_blank" rel="noopener noreferrer">
+                  <img src="images/icon-linkedin.svg" alt="LinkedIn - Strashoy" class="icono">
+                </a>
+              </td>
+            </tr>
+          </tbody>
         </table>
-
       </div>
     </section>
 
@@ -126,15 +122,6 @@
             <li>Kotlin & Jetpack Compose (Interfaces dinámicas)</li>
             <li>C# & Programación Orientada a Objetos</li>
             <li>Gestión de Estados y Arquitectura de Apps</li>
-          </ul>
-        </article>
-
-        <article class="skill-card">
-          <h3 class="skill-title">Front End</h3>
-          <ul class="skill-list">
-            <li>HTML5 Semántico</li>
-            <li>CSS3 (Flexbox & Grid)</li>
-            <li>JavaScript (ES6+)</li>
           </ul>
         </article>
 
@@ -159,16 +146,17 @@
 
         <article class="skill-card">
           <h3 class="skill-title">Diseño Lúdico & Narrativa</h3>
-          <ul class="skill-list">
+          <dl class="skill-list">
             <dt>Dirección de Partidas</dt>
-              <dd>Facilitación de mesas públicas, gestión de dinámicas de grupo y resolución de conflictos.</dd>
+            <dd>Facilitación de mesas públicas, gestión de dinámicas de grupo y resolución de conflictos.</dd>
             <dt>Ficción Emergente</dt>
-              <dd>Construcción narrativa colaborativa y adaptación ágil a las decisiones de los jugadores en tiempo real.</dd>
+            <dd>Construcción narrativa colaborativa y adaptación ágil a las decisiones de los jugadores en tiempo real.</dd>
             <dt>Diseño de Mecánicas</dt>
-              <dd>Creación de sistemas de reglas, hacks lúdicos y balance de ritmo o tensión narrativa.</dd>
+            <dd>Creación de sistemas de reglas, hacks lúdicos y balance de ritmo o tensión narrativa.</dd>
             <dt>Herramientas Digitales para Rol</dt>
-              <dd>Diseño de aplicaciones de asistencia para Game Masters y jugadores.</dd>
-          </ul>
+            <dd>Diseño de aplicaciones de asistencia para Game Masters y jugadores.</dd>
+          </dl>
+        </article>
 
       </div>
     </section>
@@ -177,61 +165,129 @@
     <section id="personal" class="section personal">
       <h2 class="section-title">Áreas de Interés & Proyectos</h2>
       <div class="personal-container">
+
+        <!-- Artículo: Desarrollo Mobile -->
         <article class="personal-card">
           <h3>Desarrollo Mobile</h3>
           <p>Creación de aplicaciones móviles nativas explorando arquitecturas modernas y consumo de datos locales o en la nube.</p>
+
+          <div class="cards-grid">
+            <div class="inner-card">
+              <div class="inner-card-img-wrapper">
+                <img src="images/mockup-asistenTZ.png" alt="Mockup de AsistenTZ, asistente digital para organizar partidas de rol" class="inner-card-img">
+                <button class="zoom-btn" aria-label="Ampliar imagen">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                </button>
+              </div>
+              <div class="inner-card-body">
+                <h4>AsistenTZ</h4>
+                <p>Es un gestor de personajes y campañas creado específicamente para el juego de rol Territorio Zombie.</p>
+              </div>
+            </div>
+
+            <div class="inner-card">
+              <div class="inner-card-img-wrapper">
+                <img src="images/mockup-fotoxpress.png" alt="Mockup de FotoXPress, herramienta para gestión de fotos en torneos" class="inner-card-img">
+                <button class="zoom-btn" aria-label="Ampliar imagen">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                </button>
+              </div>
+              <div class="inner-card-body">
+                <h4>FotoXPress</h4>
+                <p>Es un gestor rápido para organizar y borrar fotos en tu celular usando una mecánica de swipe.</p>
+              </div>
+            </div>
+
+            <div class="inner-card">
+              <div class="inner-card-img-wrapper">
+                <img src="images/mockup-lanzador.png" alt="Mockup de Lanzador Legendario, aplicación de dados virtuales para juegos de rol" class="inner-card-img">
+                <button class="zoom-btn" aria-label="Ampliar imagen">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                </button>
+              </div>
+              <div class="inner-card-body">
+                <h4>Lanzador Legendario</h4>
+                <p>Es un lanzador de dados digital exclusivo para el juego de rol Leyenda, que incluye su propia lógica de cálculo de éxitos.</p>
+              </div>
+            </div>
+          </div>
         </article>
 
+        <!-- Artículo: Juegos de Rol -->
         <article class="personal-card">
-  <h3>Juegos de Rol</h3>
-  <p>Desarrollo de experiencias narrativas atractivas y dinámicas.</p>
+          <h3>Juegos de Rol</h3>
+          <p>Desarrollo de experiencias narrativas atractivas y dinámicas.</p>
 
-  <iframe
-    style="width: 100%; max-width: 560px; height: 315px; border: 0;"
-    src="https://www.youtube.com/embed/fQ0EZfHyLdM?si=gq2t-woW-ru5jLZ6"
-    title="YouTube video player"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
+          <div class="cards-grid">
+            <div class="inner-card">
+              <iframe
+                class="inner-card-video"
+                src="https://www.youtube.com/embed/fQ0EZfHyLdM?si=gq2t-woW-ru5jLZ6"
+                title="Cómo dirigir Juegos de Rol para Niños y Adolescentes"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+              <div class="inner-card-body">
+                <h4>Juegos de Rol para Niños y Adolescentes</h4>
+                <p>Herramientas prácticas y consejos desde la experiencia para adaptar y narrar grandes aventuras diseñadas para los más chicos.</p>
+              </div>
+            </div>
 
-  <iframe
-  style="width: 100%; max-width: 560px; height: 315px; border: 0;"
-  src="https://www.youtube.com/embed/vAn6KrG2L-4?si=jopCARKpS_E7Xcl7"
-  title="YouTube video player"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen></iframe>
+            <div class="inner-card">
+              <iframe
+                class="inner-card-video"
+                src="https://www.youtube.com/embed/vAn6KrG2L-4?si=jopCARKpS_E7Xcl7"
+                title="Intencionalidad Narrativa"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+              <div class="inner-card-body">
+                <h4>Intencionalidad Narrativa</h4>
+                <p>Aprendé a mantener la coherencia en tus mesas y descubrí cómo transmitir con éxito el verdadero espíritu del juego a tus jugadores.</p>
+              </div>
+            </div>
 
-  <iframe
-  style="width: 100%; max-width: 560px; height: 315px; border: 0;"
-  src="https://www.youtube.com/embed/dzm26GEWLK4?si=bYksHZSkp44ndcQB"
-  title="YouTube video player"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen></iframe>
-
-
-
-</article>
+            <div class="inner-card">
+              <iframe
+                class="inner-card-video"
+                src="https://www.youtube.com/embed/dzm26GEWLK4?si=bYksHZSkp44ndcQB"
+                title="El autor, el protagonista y el espectador"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+              <div class="inner-card-body">
+                <h4>El autor, el protagonista y el espectador</h4>
+                <p>Explorá las tres facetas de la inmersión rolera para entender cómo creamos, vivimos y disfrutamos cada partida desde adentro.</p>
+              </div>
+            </div>
+          </div>
+        </article>
 
       </div>
     </section>
 
     <!-- Formulario de Contacto -->
     <section id="contact" class="section contact">
-      <h2 class="section-title">Contacto</h2>
-      <p class="contact-desc">Déjame un mensaje y la información se guardará localmente en tu sesión.</p>
-      
+      <h2 class="section-title">Hablemos de Código y Narrativa</h2>
+      <p class="contact-desc">Siempre estoy buscando nuevos desafíos para codear en Kotlin o diseñar nuevos hacks para juegos de mesa. Si tenés una idea para una aplicación móvil, necesitás un Game Master para un evento, o simplemente querés hablar de arquitecturas de software, dejame tu mensaje abajo.</p>
+
       <form id="contact-form" class="contact-form">
         <div class="form-group">
-          <label for="name">Nombre Completo:</label>
-          <input type="text" id="name" name="name" placeholder="Ej: Juan Pérez" required>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" placeholder="Ej: Santiago" required>
         </div>
 
         <div class="form-group">
           <label for="email">Correo Electrónico:</label>
           <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="redes">Redes Sociales:</label>
+          <input type="text" id="redes" name="redes" placeholder="Discord: @santiii" required>
         </div>
 
         <div class="form-group">
@@ -249,12 +305,45 @@
 
   <!-- Pie de página -->
   <footer class="footer">
-    <p>© 2026 Rolesencia. Todos los derechos reservados.</p>
+    <p>&copy; 2026 Rolesencia. Todos los derechos reservados.</p>
     <p>
-      <a href="https://github.com/Strashoy/landing_personal" target="_blank" rel="noopener noreferrer">Perfil de GitHub</a>
+      <a href="https://github.com/Strashoy/landing_personal" target="_blank" rel="noopener noreferrer">Repositorio del proyecto en GitHub</a>
     </p>
   </footer>
 
-  <!-- Scripts JavaScript -->
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Cerrar imagen">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  </div>
+
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const zoomBtns = document.querySelectorAll('.zoom-btn');
+    const lightboxClose = document.querySelector('.lightbox-close');
+
+    zoomBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var img = btn.closest('.inner-card-img-wrapper').querySelector('.inner-card-img');
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('active');
+      });
+    });
+
+    lightboxClose.addEventListener('click', function() {
+      lightbox.classList.remove('active');
+    });
+
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+      }
+    });
+  </script>
+
 </body>
 </html>
