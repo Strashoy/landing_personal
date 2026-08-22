@@ -20,7 +20,7 @@
   <header class="header">
     <div class="logo">
       <a href="#hero">
-        <img src="images/logo-rolesencia.png" alt="Logo de Rolesencia" class="logo-img">
+        <img src="assets/images/logo-rolesencia.png" alt="Logo de Rolesencia" class="logo-img">
       </a>
     </div>
     <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
@@ -30,11 +30,16 @@
     </button>
     <nav class="nav" id="nav" aria-label="Navegación principal">
       <ul class="nav-list">
-        <li><a href="#hero" class="nav-link">Inicio</a></li>
         <li><a href="#about" class="nav-link">Sobre mí</a></li>
         <li><a href="#skills" class="nav-link">Habilidades</a></li>
-        <li><a href="#personal" class="nav-link">Proyectos</a></li>
-        <li><a href="#contact" class="nav-link">Contacto</a></li>
+        <li class="nav-dropdown">
+          <a href="#personal" class="nav-link">Proyectos</a>
+          <ul class="dropdown-list">
+            <li><a href="#mobile" class="dropdown-link">Aplicaciones Móviles</a></li>
+            <li><a href="#rol" class="dropdown-link">Juegos de Rol</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" class="nav-link nav-cta">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -47,11 +52,17 @@
       <div class="about-content">
         <h1 class="about-title">Hola, soy <span class="highlight">Lucas Eliel Sosa</span></h1>
         <h2 class="about-subtitle">Desarrollador Mobile & Diseñador de Juegos de Rol</h2>
-        <p class="about-text">Apasionado por la experiencia de usuario y solucionar problemas de forma sencilla para el usuario.</p>
+        <p class="about-text">Creando experiencias digitales fluidas y mecánicas de juego inmersivas.</p>
 
         <div class="about-actions">
-          <a href="#mobile" class="btn btn-vercel">Desarrollo Mobile</a>
-          <a href="#rol" class="btn btn-vercel">Juegos de Rol</a>
+          <a href="#mobile" class="btn btn-vercel">
+            <img src="assets/images/icon-mobile.svg" alt="" class="btn-icon">
+            Aplicaciones Móviles
+          </a>
+          <a href="#rol" class="btn btn-vercel">
+            <img src="assets/images/icon-dice.svg" alt="" class="btn-icon">
+            Juegos de Rol
+          </a>
         </div>
       </div>
     </section>
@@ -86,27 +97,27 @@
             <tr>
               <td>
                 <a href="https://www.instagram.com/rolesencia/" target="_blank" rel="noopener noreferrer">
-                  <img src="images/icon-instagram.svg" alt="Instagram - Rolesencia" class="icono">
+                  <img src="assets/images/icon-instagram.svg" alt="Instagram - Rolesencia" class="icono">
                 </a>
               </td>
               <td>
                 <a href="https://www.youtube.com/@rolesencia" target="_blank" rel="noopener noreferrer">
-                  <img src="images/icon-youtube.svg" alt="YouTube - Rolesencia" class="icono">
+                  <img src="assets/images/icon-youtube.svg" alt="YouTube - Rolesencia" class="icono">
                 </a>
               </td>
               <td>
                 <a href="https://github.com/Strashoy" target="_blank" rel="noopener noreferrer">
-                  <img src="images/icon-github.svg" alt="GitHub - Strashoy" class="icono">
+                  <img src="assets/images/icon-github.svg" alt="GitHub - Strashoy" class="icono">
                 </a>
               </td>
               <td>
                 <a href="https://rolesencia.itch.io/" target="_blank" rel="noopener noreferrer">
-                  <img src="images/icon-itch-io.svg" alt="Itch.io - Rolesencia" class="icono">
+                  <img src="assets/images/icon-itch-io.svg" alt="Itch.io - Rolesencia" class="icono">
                 </a>
               </td>
               <td>
                 <a href="https://www.linkedin.com/in/lucasesosa/" target="_blank" rel="noopener noreferrer">
-                  <img src="images/icon-linkedin.svg" alt="LinkedIn - Strashoy" class="icono">
+                  <img src="assets/images/icon-linkedin.svg" alt="LinkedIn - Strashoy" class="icono">
                 </a>
               </td>
             </tr>
@@ -178,9 +189,25 @@
           <div class="cards-grid">
             <div class="inner-card">
               <div class="inner-card-img-wrapper">
-                <img src="images/mockup-asistenTZ.png" alt="Mockup de AsistenTZ, asistente digital para organizar partidas de rol" class="inner-card-img">
+                <img src="assets/images/mockup-lanzador.png" alt="Mockup de Lanzador Legendario, aplicación de dados virtuales para juegos de rol" class="inner-card-img">
                 <button class="zoom-btn" aria-label="Ampliar imagen">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                  <img src="assets/images/icon-zoom.svg" alt="" class="zoom-icon">
+                </button>
+              </div>
+              <div class="inner-card-body">
+                <h4>Lanzador Legendario</h4>
+                <p>Es un lanzador de dados digital exclusivo para el juego de rol Leyenda, que incluye su propia lógica de cálculo de éxitos.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.rolesencia.lanzadr" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/images/badge-playstore.svg" alt="Disponible en Google Play" class="playstore-badge">
+                </a>
+              </div>
+            </div>
+
+            <div class="inner-card">
+              <div class="inner-card-img-wrapper">
+                <img src="assets/images/mockup-asistenTZ.png" alt="Mockup de AsistenTZ, asistente digital para organizar partidas de rol" class="inner-card-img">
+                <button class="zoom-btn" aria-label="Ampliar imagen">
+                  <img src="assets/images/icon-zoom.svg" alt="" class="zoom-icon">
                 </button>
               </div>
               <div class="inner-card-body">
@@ -191,27 +218,14 @@
 
             <div class="inner-card">
               <div class="inner-card-img-wrapper">
-                <img src="images/mockup-fotoxpress.png" alt="Mockup de FotoXPress, herramienta para gestión de fotos en torneos" class="inner-card-img">
+                <img src="assets/images/mockup-fotoxpress.png" alt="Mockup de FotoXPress, herramienta para gestión de fotos en torneos" class="inner-card-img">
                 <button class="zoom-btn" aria-label="Ampliar imagen">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                  <img src="assets/images/icon-zoom.svg" alt="" class="zoom-icon">
                 </button>
               </div>
               <div class="inner-card-body">
                 <h4>FotoXPress</h4>
-                <p>Es un gestor rápido para organizar y borrar fotos en tu celular usando una mecánica de swipe.</p>
-              </div>
-            </div>
-
-            <div class="inner-card">
-              <div class="inner-card-img-wrapper">
-                <img src="images/mockup-lanzador.png" alt="Mockup de Lanzador Legendario, aplicación de dados virtuales para juegos de rol" class="inner-card-img">
-                <button class="zoom-btn" aria-label="Ampliar imagen">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                </button>
-              </div>
-              <div class="inner-card-body">
-                <h4>Lanzador Legendario</h4>
-                <p>Es un lanzador de dados digital exclusivo para el juego de rol Leyenda, que incluye su propia lógica de cálculo de éxitos.</p>
+                <p>Es un gestor rápido para organizar y borrar fotos en tu celular usando una mecánica de deslizamiento lateral.</p>
               </div>
             </div>
           </div>
@@ -278,7 +292,7 @@
       <h2 class="section-title">Hablemos de Código y Narrativa</h2>
       <p class="contact-desc">Siempre estoy buscando nuevos desafíos para codear en Kotlin o diseñar nuevos hacks para juegos de mesa. Si tenés una idea para una aplicación móvil, necesitás un Game Master para un evento, o simplemente querés hablar de arquitecturas de software, dejame tu mensaje abajo.</p>
 
-      <form id="contact-form" class="contact-form">
+      <form id="contact-form" class="contact-form" action="" method="post">
         <div class="form-group">
           <label for="name">Nombre:</label>
           <input type="text" id="name" name="name" placeholder="Ej: Santiago" required>
@@ -290,13 +304,13 @@
         </div>
 
         <div class="form-group">
-          <label for="redes">Redes Sociales:</label>
-          <input type="text" id="redes" name="redes" placeholder="Discord: @santiii" required>
+          <label for="redes">Redes Sociales (opcional):</label>
+          <input type="text" id="redes" name="redes" placeholder="Discord: @santiii">
         </div>
 
         <div class="form-group">
           <label for="message">Mensaje:</label>
-          <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje ..." required></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
@@ -309,10 +323,13 @@
 
   <!-- Pie de página -->
   <footer class="footer">
-    <p>&copy; 2026 Rolesencia. Todos los derechos reservados.</p>
-    <p>
-      <a href="https://github.com/Strashoy/landing_personal" target="_blank" rel="noopener noreferrer">Repositorio del proyecto en GitHub</a>
-    </p>
+    <p>&copy; 2026 Rolesencia | Desarrollado por Lucas Eliel Sosa</p>
+    <p>Proyecto Final (PFO1) - Desarrollo de Sistemas Web Front End</p>
+    <div class="footer-links">
+      <a class="nav-link" href="https://github.com/Strashoy" target="_blank" rel="noopener noreferrer">Mi Perfil de GitHub</a>
+      <a class="nav-link nav-cta" href="https://github.com/Strashoy/landing_personal" target="_blank" rel="noopener noreferrer">Repositorio del Proyecto</a>
+      <a class="nav-link" href="https://www.linkedin.com/in/lucasesosa/" target="_blank" rel="noopener noreferrer">Mi Perfil de LinkedIn</a>
+    </div>
   </footer>
 
   <!-- Lightbox -->
@@ -323,47 +340,7 @@
     <img class="lightbox-img" id="lightbox-img" src="" alt="">
   </div>
 
-  <script>
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const zoomBtns = document.querySelectorAll('.zoom-btn');
-    const lightboxClose = document.querySelector('.lightbox-close');
-
-    zoomBtns.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var img = btn.closest('.inner-card-img-wrapper').querySelector('.inner-card-img');
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-        lightbox.classList.add('active');
-      });
-    });
-
-    lightboxClose.addEventListener('click', function() {
-      lightbox.classList.remove('active');
-    });
-
-    lightbox.addEventListener('click', function(e) {
-      if (e.target === lightbox) {
-        lightbox.classList.remove('active');
-      }
-    });
-
-    const menuToggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('nav');
-
-    menuToggle.addEventListener('click', function() {
-      var expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', !expanded);
-      nav.classList.toggle('nav-open');
-    });
-
-    document.querySelectorAll('.nav-link').forEach(function(link) {
-      link.addEventListener('click', function() {
-        menuToggle.setAttribute('aria-expanded', 'false');
-        nav.classList.remove('nav-open');
-      });
-    });
-  </script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>
